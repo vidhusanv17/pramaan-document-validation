@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+data/
+tests/*_out.json
+tests/*_err.txt
+tests/ids.json
+.env

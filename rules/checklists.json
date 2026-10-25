@@ -1,0 +1,236 @@
+{
+  "_note": "Illustrative, configurable checklists. Numbers are placeholders to be aligned with the applicable AICTE Approval Process Handbook; administrators edit them in Admin > Checklists (versioned, audited).",
+  "infrastructure_norms": {
+    "built_up_area_sqm_per_student": {
+      "Engineering": 20,
+      "Pharmacy": 14,
+      "Management": 15,
+      "Polytechnic": 20,
+      "Architecture": 25
+    },
+    "min_land_acres": {
+      "Engineering": 2.5,
+      "Pharmacy": 1,
+      "Management": 1,
+      "Polytechnic": 2.5,
+      "Architecture": 1
+    },
+    "faculty_student_ratio": 20,
+    "library_volumes_min": 4000,
+    "computers_per_student": 0.25
+  },
+  "document_validity": {
+    "FIRE_NOC": 365,
+    "AFFIDAVIT": 365,
+    "BUILDING_SAFETY": 1095,
+    "UNIVERSITY_AFFILIATION": 365
+  },
+  "checklists": {
+    "EOA": {
+      "name": "Extension of Approval (no change)",
+      "required_documents": [
+        {
+          "doc_type": "AFFIDAVIT",
+          "required": true,
+          "max_age_days": 365
+        },
+        {
+          "doc_type": "FIRE_NOC",
+          "required": true,
+          "must_be_valid": true,
+          "verify": true
+        },
+        {
+          "doc_type": "BUILDING_SAFETY",
+          "required": true,
+          "must_be_valid": true
+        },
+        {
+          "doc_type": "LEASE_DEED",
+          "required": true,
+          "must_be_valid": true,
+          "verify": true,
+          "alternative": "LAND_DOCUMENT"
+        },
+        {
+          "doc_type": "TER_RECEIPT",
+          "required": true,
+          "verify": true
+        },
+        {
+          "doc_type": "FACULTY_LIST",
+          "required": true
+        },
+        {
+          "doc_type": "UNIVERSITY_AFFILIATION",
+          "required": true,
+          "must_be_valid": true,
+          "verify": true
+        },
+        {
+          "doc_type": "NBA_ACCREDITATION",
+          "required": false,
+          "verify": true,
+          "note": "Only if accreditation is claimed in the application"
+        }
+      ]
+    },
+    "INCREASE_INTAKE": {
+      "name": "EoA with increase in intake",
+      "required_documents": [
+        {
+          "doc_type": "AFFIDAVIT",
+          "required": true,
+          "max_age_days": 365
+        },
+        {
+          "doc_type": "FIRE_NOC",
+          "required": true,
+          "must_be_valid": true,
+          "verify": true
+        },
+        {
+          "doc_type": "BUILDING_SAFETY",
+          "required": true,
+          "must_be_valid": true
+        },
+        {
+          "doc_type": "BUILDING_PLAN",
+          "required": true,
+          "note": "Built-up area must support the proposed intake"
+        },
+        {
+          "doc_type": "LEASE_DEED",
+          "required": true,
+          "must_be_valid": true,
+          "verify": true,
+          "alternative": "LAND_DOCUMENT"
+        },
+        {
+          "doc_type": "TER_RECEIPT",
+          "required": true,
+          "verify": true
+        },
+        {
+          "doc_type": "FACULTY_LIST",
+          "required": true
+        },
+        {
+          "doc_type": "UNIVERSITY_AFFILIATION",
+          "required": true,
+          "must_be_valid": true,
+          "verify": true
+        },
+        {
+          "doc_type": "NBA_ACCREDITATION",
+          "required": false,
+          "verify": true
+        }
+      ]
+    },
+    "NEW_COURSE": {
+      "name": "EoA with new course",
+      "required_documents": [
+        {
+          "doc_type": "AFFIDAVIT",
+          "required": true,
+          "max_age_days": 365
+        },
+        {
+          "doc_type": "FIRE_NOC",
+          "required": true,
+          "must_be_valid": true,
+          "verify": true
+        },
+        {
+          "doc_type": "BUILDING_SAFETY",
+          "required": true,
+          "must_be_valid": true
+        },
+        {
+          "doc_type": "BUILDING_PLAN",
+          "required": true
+        },
+        {
+          "doc_type": "FACULTY_LIST",
+          "required": true
+        },
+        {
+          "doc_type": "TER_RECEIPT",
+          "required": true,
+          "verify": true
+        },
+        {
+          "doc_type": "UNIVERSITY_AFFILIATION",
+          "required": true,
+          "must_be_valid": true,
+          "verify": true
+        }
+      ]
+    },
+    "NEW_INSTITUTION": {
+      "name": "New institution",
+      "required_documents": [
+        {
+          "doc_type": "AFFIDAVIT",
+          "required": true,
+          "max_age_days": 365
+        },
+        {
+          "doc_type": "LAND_DOCUMENT",
+          "required": true,
+          "verify": true,
+          "alternative": "LEASE_DEED"
+        },
+        {
+          "doc_type": "BUILDING_PLAN",
+          "required": true
+        },
+        {
+          "doc_type": "OCCUPANCY_CERT",
+          "required": true
+        },
+        {
+          "doc_type": "BUILDING_SAFETY",
+          "required": true,
+          "must_be_valid": true
+        },
+        {
+          "doc_type": "FIRE_NOC",
+          "required": true,
+          "must_be_valid": true,
+          "verify": true
+        },
+        {
+          "doc_type": "BANK_FDR",
+          "required": true,
+          "verify": true
+        },
+        {
+          "doc_type": "TER_RECEIPT",
+          "required": true,
+          "verify": true
+        }
+      ]
+    },
+    "CLOSURE": {
+      "name": "Closure of institution / course",
+      "required_documents": [
+        {
+          "doc_type": "AFFIDAVIT",
+          "required": true,
+          "max_age_days": 365
+        },
+        {
+          "doc_type": "UNIVERSITY_AFFILIATION",
+          "required": false
+        },
+        {
+          "doc_type": "TER_RECEIPT",
+          "required": true,
+          "verify": true
+        }
+      ]
+    }
+  }
+}
